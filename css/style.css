@@ -1,0 +1,1083 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style: none;
+}
+a,a:hover,a:focus{
+    text-decoration: none;
+    outline: 0;
+}
+h1,h2,h3,h4,h5,h6,p,ol,ul,li,figure,figcaption,address{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.clr{
+    clear: both;
+}
+h1,h2,h3{
+    font-family: 'Montserrat', sans-serif;
+}
+h4,h5,h6,p{
+    font-family: 'Poppins', sans-serif;
+}
+.bg{
+    background: #333333;
+}
+h2{
+    margin-top: 40px;
+    font-weight: 900;
+    font-size: 42px;
+    color: rgba(1, 1, 1, 1);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/*  common css  */
+/* preloader */
+#loader{
+  width: 100%;
+  height: 100vh;
+  position:fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999999999999999999999;
+  overflow: hidden;
+  background: rgba(250, 250, 250, 1);
+}
+#loader .loading{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 8px solid #219638;
+}
+#loader .loading:before{
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -8px;
+  left: -8px;
+  border-radius: 50%;
+  border: 8px solid rgba(255, 255, 255,1);
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid transparent; 
+  animation: rotate 0.8s linear infinite; 
+}
+@keyframes rotate{
+  0%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+}
+/* preloader */
+/* menubar part start here */
+header .navigation{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    height: 50px;
+    line-height: 50px;
+    z-index: 99999999;
+    width: 100%;
+    transition: all linear 0.4s;
+}
+header .navigation.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(1, 1, 1, 0.8);
+    width: 100%;
+    height: 60px;
+    line-height: 30px;
+    z-index: 999999;
+}
+#home .menu{
+    width: 100%;
+    height: 46px;
+    line-height: 10px;
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+}
+#home .menu .navbar-brand{
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+}
+#home .menu .navbar-brand span{
+    font-size: 38px;
+    font-weight: 700;
+    color: #219638;
+    display: inline-block;
+}
+#home .menu .navbar .navbar-nav .nav-item .nav-link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    padding-right: 30px;
+    transition: all linear 0.3s;
+    position: relative;
+    text-transform: uppercase;
+}
+#home .menu .navbar .navbar-nav .nav-item .nav-link.active{
+    color: #219638;
+}
+#home .menu .navbar .navbar-nav .nav-item .nav-link:hover{
+    color: #219638;
+}
+#home .menu .navbar .navbar-nav .nav-item:last-child .nav-link{
+    padding-right: 0px;
+}
+/* menubar part ends here */
+/* banner part start here */
+.banner{
+    position: relative;
+    margin-bottom: 100px;
+}
+.banner .carousel-control-prev-icon{
+    background: none;
+}
+.carousel-control-prev{
+    position: absolute;
+    top: 50%;
+    transition: all linear 0.3s;
+    left: 40px;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    z-index: 9999;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    font-size: 30px;
+    color: #e8e8e8;
+    padding-right: 4px;
+    text-align: center;
+    opacity: 1;
+    transition: all linear 0.3s;
+}
+.carousel-control-next{
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    z-index: 9999;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    font-size: 30px;
+    color: #e8e8e8;
+    padding-left: 4px;
+    text-align: center;
+    opacity: 1;
+    transition: all linear 0.3s;
+}
+.banner .carousel-control-prev:hover, .banner .carousel-control-next:hover{
+    color: #219638;
+    border: 1px solid #219638;
+}
+.banner .carousel-inner .first_bg{
+    background: url(../images/1034.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner .carousel-inner .seceond_bg{
+    background: url(../images/126.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner .carousel-inner .third_bg{
+    background: url(../images/33.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner .carousel-inner .first_bg .overlay{
+    background: rgba(1, 1, 1, 0.9);
+    height: 100vh; 
+    position: relative;
+}
+.banner .carousel-inner .seceond_bg .overlay{
+    background: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    position: relative;
+}
+.banner .carousel-inner .third_bg .overlay{
+    background: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    position: relative;
+}
+.banner .carousel-inner .first_bg .overlay h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 90px;
+    color: #e8e8e8;
+    text-transform: capitalize;
+    margin-top: -40px;
+}
+.banner .carousel-inner .seceond_bg .overlay h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 90px;
+    color: #e8e8e8;
+    text-transform: capitalize;
+    margin-top: -40px;
+}
+.banner .carousel-inner .third_bg .overlay h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 90px;
+    color: #e8e8e8;
+    text-transform: capitalize;
+    margin-top: -40px;
+}
+.banner .carousel-inner .first_bg .overlay p span.one{
+    font-weight: 700;
+    font-size: 20px;
+    color: #219638;
+}
+.banner .carousel-inner .seceond_bg .overlay p span.one{
+    font-weight: 700;
+    font-size: 20px;
+    color: #219638;
+}
+.banner .carousel-inner .third_bg .overlay p span.one{
+    font-weight: 700;
+    font-size: 20px;
+    color: #219638;
+}
+.banner .carousel-inner .first_bg .overlay h2 span.one{
+    font-weight: 900;
+    font-size: 80px;
+    color: #219638;
+    text-transform: capitalize;
+}
+.banner .carousel-inner .seceond_bg .overlay h2 span.one{
+    font-weight: 900;
+    font-size: 80px;
+    color: #219638;
+    text-transform: capitalize;
+}
+.banner .carousel-inner .third_bg .overlay h2 span.one{
+    font-weight: 900;
+    font-size: 80px;
+    color: #219638;
+    text-transform: capitalize;
+}
+.banner .carousel-inner .first_bg .overlay h2 span.two{
+    font-weight: 900;
+    font-size: 80px;
+    color: #fff;
+    text-transform: lowercase;
+}
+.banner .carousel-inner .seceond_bg .overlay h2 span.two{
+    font-weight: 900;
+    font-size: 80px;
+    color: #fff;
+    text-transform: lowercase;
+}
+.banner .carousel-inner .third_bg .overlay h2 span.two{
+    font-weight: 900;
+    font-size: 80px;
+    color: #fff;
+    text-transform: lowercase;
+}
+.banner .carousel-inner .first_bg .overlay p{
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+.banner .carousel-inner .seceond_bg .overlay p{
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+.banner .carousel-inner .third_bg .overlay p{
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+.banner .carousel-indicators li{
+     position: relative;
+    -webkit-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+.banner .carousel-indicators li.active{
+     position: relative;
+    -webkit-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 15px;
+    height: 15px;
+    border-radius: 10%;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    background-color: #219638;
+}
+.banner .carousel-inner .first_bg .overlay h3 a{
+    margin-top: 100px;
+    font-weight: 500;
+    font-size: 16px;
+    background: #0c651d;
+    width: 150px;
+    height: 50px;
+    line-height: 45px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #0c651d;
+    text-transform: uppercase;
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: all linear 0.3s;
+}
+.banner .carousel-inner .first_bg .overlay h3 a:hover{
+    border: 2px solid #219638;
+    background: none;
+    color: #219638;
+}
+.banner .carousel-inner .seceond_bg .overlay h3 a{
+    margin-top: 100px;
+    font-weight: 500;
+    font-size: 16px;
+    background: #0c651d;
+    width: 150px;
+    height: 50px;
+    letter-spacing: 1px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #0c651d;
+    text-transform: uppercase;
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: all linear 0.3s;
+}
+.banner .carousel-inner .seceond_bg .overlay h3 a:hover{
+    border: 2px solid #219638;
+    background: none;
+    color: #219638;
+}
+.banner .carousel-inner .third_bg .overlay h3 a{
+    margin-top: 100px;
+    font-weight: 500;
+    font-size: 16px;
+    background: #0c651d;
+    width: 150px;
+    height: 50px;
+    letter-spacing: 1px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #0c651d;
+    text-transform: uppercase;
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: all linear 0.3s;
+}
+.banner .carousel-inner .third_bg .overlay h3 a:hover{
+    border: 2px solid #219638;
+    background: none;
+    color: #219638;
+}
+.banner .overlay .container{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.banner .carousel-indicators{
+    padding-bottom: 30px;
+}
+/* about part start here */
+#about{
+    margin-bottom: 100px;
+}
+#about .about_name p{
+    padding-top: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #222222;
+    text-transform: capitalize;
+}
+#about .about_image{
+    height: 400px;
+    position: relative;
+}
+#about .about_image img{
+    width: 350px;
+    height: 400px;
+}
+#about .about_image:before{
+    position: absolute;
+    content: "";
+    width: 40%;
+    bottom: 0px;
+    top: 10%;
+    border: 10px solid rgba(1, 1, 1, 1);
+    z-index: -1;
+}
+#about .about_content{
+}
+#about .about_content p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #222222;
+}
+#about .about_content span{
+    font-weight: 600;
+    color: rgba(1, 1, 1, 1);
+}
+#about .about_address{
+    margin-top: 45px;
+}
+#about .about_address .address_one{
+    float: left;
+    width: 50%;
+    position: relative;
+}
+#about .about_address .address_one ul li{
+    line-height: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #222222; 
+}
+#about .about_address .address_one ul li span{
+    font-weight: 600;
+    color: rgba(1, 1, 1, 1);
+    letter-spacing: 1px;
+}
+#about .about_address .address_two{
+    float: left;
+    width: 50%;
+}
+#about .about_address .address_two ul li{
+    line-height: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #222222; 
+}
+#about .about_address .address_two ul li span{
+    font-weight: 600;
+    color: rgba(1, 1, 1, 1);
+    letter-spacing: 1px;
+}
+#about .about_cv .cariculum{
+    margin-top: 230px;
+    width: 160px;
+    height: 50px;
+    background: #0c651d;
+    border: 2px solid #0c651d;
+    transition: all linear 0.3s;
+}
+#about .about_cv h1{
+    font-size: 15px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 50px;
+    text-transform: uppercase;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+#about .about_cv .cariculum:hover{
+    background: none;
+    border: 2px solid #0c651d;
+}
+#about .about_cv .cariculum:hover h1{
+    color: #0c651d;
+}
+/* about part ends here */
+/* service part start here */
+#service{
+    margin-bottom: 100px;
+}
+#service .top p{
+    padding-top: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #222222;
+    text-transform: capitalize;
+}
+#service .service_images{
+    height: 300px;
+    background: #f2f2f2;
+    border: 2px solid #ffff;
+    margin: 15px 15px;
+    transition: all linear 0.4s;
+}
+#service .service_images:hover{
+    box-shadow: 1px 1px 3px 3px rgba(191, 191, 191, 0.6);
+    border: 2px solid rgba(33, 150, 56, 0.51);
+}
+#service .service_images:hover i{
+    color: #0c651d;
+    transition: all linear 0.3s; 
+}
+/*
+#service .service_images:hover h6{
+    color: #ededed;
+    transition: all linear 0.3s; 
+}
+*/
+#service .service_images i{
+    margin-left: 20px;
+    font-size: 50px;
+    color: rgba(1, 1, 1, 1);
+}
+#service .service_images h3{
+    padding-top: 25px;
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(1, 1, 1, 1);
+    text-transform: uppercase;
+}
+#service .service_images p{
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #222222;
+    text-transform: capitalize;
+}
+/* service part ends here */
+/* skill part start here  */
+#skill{
+    margin-bottom: 100px;
+}
+#skill .skill_text p{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 120px;
+    padding-right: 120px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #222222;
+    text-transform: capitalize;
+}
+#skill .skill_content{
+    height: 400px;
+}
+#skill .skill_content h3{
+    font-weight: 600;
+    font-size: 24px;
+    color: #222222;
+    text-transform: capitalize;
+}
+#skill .skill_content p{
+    padding-top: 15px;
+    margin-right: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #222222;
+    text-transform: capitalize;
+}
+#skill .my_skill{
+    height: 400px;
+}
+/* skillbar plugins start here  */
+#SkillBox {
+    font-size: 20px;
+    width: 100%;
+    height: auto;
+    border-radius:20px;
+    -o-border-radius:20px;
+    -webkit-border-radius:20px;
+    -ms-border-radius:20px;
+    -moz-border-radius:20px;  
+}
+#skill .my_skill #SkillBox h1{
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 22px;
+    padding-bottom: 10px;
+    color: #222222;
+}
+#skill .my_skill h3{
+    padding-top: 0px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #222222;
+    text-transform: uppercase;
+}
+.SkillBar {
+    width: 100%;
+    height: 20px;
+    position: relative;
+    background: rgba(1, 1, 1, 0.8);
+}
+#Skill-HTML {
+    width: 95%;
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
+    height: 20px;
+    position: absolute;
+    background-color: #0c651d;
+}
+@keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 95%}
+}@-webkit-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 95%}
+}@-moz-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 95%}
+}@-o-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 95%}
+}
+#Skill-CSS {
+    animation: Animate-CSS 5s;
+    -webkit-animation: Animate-CSS 5s;
+    -moz-animation: Animate-CSS 5s;
+    -o-animation: Animate-CSS 5s;
+    width: 90%;
+    height: 20px;
+    position: absolute;
+    background-color: #0c651d;
+}
+@keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 90%}
+}@-webkit-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 90%}
+}@-moz-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 90%}
+}@-o-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 90%}
+}#Skill-jQuery {
+    animation: Animate-jQuery 5s;
+    -webkit-animation: Animate-jQuery 5s;
+    -moz-animation: Animate-jQuery 5s;
+    -o-animation: Animate-jQuery 5s;
+    width: 80%;
+    height: 20px;
+    position: absolute;
+    background-color: #0c651d;
+}
+@keyframes Animate-jQuery {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}@-webkit-keyframes Animate-jQuery {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}@-moz-keyframes Animate-jQuery {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}@-o-keyframes Animate-jQuery {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}
+#Skill-PHP {
+    animation: Animate-PHP 4s;
+    -webkit-animation: Animate-PHP 4s;
+    -moz-animation: Animate-PHP 4s;
+    -o-animation: Animate-PHP 4s;
+    width: 75%;
+    height: 20px;
+    position: absolute;
+    background-color: #0c651d;
+}
+@keyframes Animate-PHP {
+    from {
+    width: 10px;
+}
+to {
+    width: 75%}
+}@-webkit-keyframes Animate-PHP {
+    from {
+    width: 10px;
+}
+to {
+    width: 75%}
+}@-moz-keyframes Animate-PHP {
+    from {
+    width: 10px;
+}
+to {
+    width: 75%}
+}@-o-keyframes Animate-PHP {
+    from {
+    width: 10px;
+}
+to {
+    width: 75%}
+}
+.PercentText {
+    z-index: 3;
+    position: relative;
+    padding-right: 15px;
+    float: right;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+/* skillbar plugins ends here  */
+/* counter start here */
+#skill .counter_bg{
+    margin-top: 15px;
+    height: 250px;
+    background: url(../images/bnr2.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#skill .counter_bg .overlay{
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+#skill .counter_bg .overlay .count{
+    padding-top: 7%;
+}
+#skill .counter_bg .overlay .count i{
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 65px;
+    color: #e8e8e8;
+    padding-bottom: 20px;
+}
+#skill .counter_bg .overlay .count h4{
+    padding-top: 15px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #219638;
+}
+#skill .counter_bg .overlay .count h3{
+    padding-top: 15px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-size: 20px;
+    color: #e8e8e8;
+}
+/* counter ends here */
+/* skill part ends here  */
+/* portfolio part start here  */
+#portfolio{
+   margin-bottom: 100px;
+}
+#portfolio .mix{
+    margin-bottom: 30px;
+}
+#portfolio p{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 120px;
+    padding-right: 120px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #222222;
+    text-transform: capitalize;
+}
+#portfolio .buttons{
+    margin: 50px 50px;
+    text-align: center;
+}
+#portfolio .buttons button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #232323;
+    font-weight: 600;
+    background: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all linear 0.3s;
+}
+#portfolio .buttons .active{
+    color: #219638;
+}
+#portfolio .buttons button:hover{
+    color: #219638;
+}
+#portfolio .filter_overlay{
+    position: relative;
+}
+#portfolio .filter_overlay .overlay{
+    background: rgba(24, 119, 43, 0.8);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+#portfolio .filter_overlay .overlay:hover{
+    left: 0px;
+    opacity: 1;
+}
+#portfolio .filter_overlay .overlay i{
+    font-size: 30px;
+    color: #e5e5e5;
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#portfolio .filter_overlay .overlay h3{
+    padding-top: 175px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #e5e5e5;
+    text-transform: capitalize;
+}
+#portfolio img{
+    width: 100%;
+    height: 100%;
+}
+/* portfolio part ends here  */
+/* contact part start here  */
+#contact{
+    margin-bottom: 30px;
+}
+#contact .contact_text{
+    margin-bottom: 20px;
+}
+#contact .form_part{
+    width: 100%;
+    text-align: center;
+}
+#contact form .form_left{
+    width: 48%;
+    display: inline-block; 
+    margin-top: 20px;
+}
+#contact form .form_right{
+    width: 48%;
+    display: inline-block;
+    margin-top: 20px;
+}
+#contact form .form_all textarea{
+    width: 94%;
+    height: 180px;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: inline-block;
+    resize: none;
+    margin-top: 20px;
+    border: 1px solid #a7a3a3;
+}
+#contact form .form_right input{
+    width: 95%;
+    height: 50px;
+    padding-left: 10px;
+    display: inline-block;
+    border: 1px solid #a7a3a3;
+    background: none;
+}
+#contact form .form_left input{
+    width: 95%;
+    height: 50px;
+    padding-left: 10px;
+    display: inline-block;
+    border: 1px solid #a7a3a3;
+    background: none;
+}
+#contact form .submit-button button{
+    width: 120px;
+    height: 50px;
+    margin-top: 30px;
+    line-height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff; 
+    border: 2px solid #0c651d;
+    background: #0c651d;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+#contact form .submit-button button:hover{
+    background: none;
+    border: 2px solid #0c651d;
+    color: #0c651d;
+}
+/* contact part ends here  */
+/* footer part start here */
+#footer .contact_icon{
+    background: rgba(1, 1, 1, 1);
+    height: 120px;
+    width: 100%;
+}
+#footer .contact_icon .icon{
+    margin-top: 20px;
+}
+#footer .contact_icon .icon i{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    margin: 10px;
+    color: #898989;
+    border: 1px solid #898989;
+    transition: all linear 0.3s;
+}
+#footer .contact_icon .icon p{
+    margin-top: 10px;
+    color: #898989;
+}
+#footer .contact_icon .icon i:hover{
+    color: #219638;
+    border: 1px solid #219638;
+}
+/* footer part ends here */
+
+/* top button */
+.top_to{
+    width: 40px;
+    height: 40px;
+    background: #0c651d;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    border: 1px solid #0c651d;
+    display: none;
+    transition: all linear 0.3s;
+}
+.top_to:hover{
+    background: none;
+    border: 1px solid #0c651d;
+    color: #0c651d; 
+}
+/* top button */
+
+
+
+
+
+
+
+
