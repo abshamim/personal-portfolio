@@ -1,0 +1,311 @@
+@media(min-width: 992px) and (max-width: 1199px){}
+@media (min-width: 768px) and (max-width: 991px){
+    h2{
+        margin-top: 0px;
+    }
+    .navbar-toggler-icon{
+        background: none;
+        border: none;
+    }
+    .navbar-light .navbar-toggler{
+        border-color: none;
+    }
+    #home .navigation .menu .icon_class{
+        color: white;
+    }
+    .banner .carousel-inner .third_bg .overlay h2,  .banner .carousel-inner .first_bg .overlay h2,  .banner .carousel-inner .seceond_bg .overlay h2, .banner .carousel-inner .third_bg .overlay h2 span.one, .banner .carousel-inner .first_bg .overlay h2 span.one, .banner .carousel-inner .seceond_bg .overlay h2 span.one, .banner .carousel-inner .third_bg .overlay h2 span.two, .banner .carousel-inner .first_bg .overlay h2 span.two, .banner .carousel-inner .seceond_bg .overlay h2 span.two{
+        font-size: 60px;
+    }
+    .banner .carousel-inner .third_bg .overlay p, .banner .carousel-inner .first_bg .overlay p, .banner .carousel-inner .seceond_bg .overlay p, .banner .carousel-inner .third_bg .overlay p span.one, .banner .carousel-inner .first_bg .overlay p span.one, .banner .carousel-inner .seceond_bg .overlay p span.one{
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    .banner .carousel-inner .third_bg .overlay h3 a, .banner .carousel-inner .first_bg .overlay h3 a, .banner .carousel-inner .seceond_bg .overlay h3 a{
+        margin-top: 60px;
+        font-size: 14px;
+        width: 120px;
+        height: 45px;
+        line-height: 40px;
+    }
+    .banner .carousel-inner .seceond_bg .overlay h3 a:hover, .banner .carousel-inner .third_bg .overlay h3 a:hover, .banner .carousel-inner .first_bg .overlay h3 a:hover{
+        border: 2px solid #0c651d;
+        background: #0c651d;
+        color: #ffffff;
+}
+    .banner .carousel-indicators li{
+        margin-bottom: 30px;
+    }
+    .carousel-control-next, .carousel-control-prev{
+        font-size: 25px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+    .banner .carousel-control-prev:hover, .banner .carousel-control-next:hover{
+        color: #e8e8e8;
+        border: 1px solid #e8e8e8;
+    }
+    #home .menu .navbar .navbar-nav{
+        background: rgba(1, 1, 1, .9);
+        margin-top: 5px;
+    }
+    #home .menu .navbar .navbar-nav .nav-item{
+        border-bottom: 1px solid #6f6f6f;
+        padding-top: 10px;
+    }
+    #home .menu .navbar .navbar-nav .nav-item:last-child{
+        border-bottom: none;
+    }
+    #home .menu .navbar .navbar-nav .nav-item .nav-link{
+        margin-left: 15px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    #home .menu .navbar .navbar-nav .nav-item .nav-link:hover{
+        color: #fff;
+    }
+    #about .about_heading p {
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 18px;
+    }
+    #service .top p{
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 18px;
+    }
+    #about .about_content .my_cv{
+        width: 125px;
+        height: 40px;
+        margin-top: 15px;
+    }
+    #about .about_content .my_cv h1{
+        font-size: 12px;
+        line-height: 40px;
+    }
+    #about .about_content p{
+        font-size: 13px
+    }
+    #about .about_content{
+        position: inherit;
+    }
+    #about .about_address{
+        position: inherit;
+        z-index: 0;
+    }
+    .about_text{
+    }
+    #about .about_content .about_address h4{
+        font-size: 10px;
+    }
+    #about .about_content .my_cv:hover{
+        border: 2px solid #0c651d;
+        background: #0c651d;
+    }
+    #about .about_content .my_cv:hover h1{
+        color: #fff;
+    }
+    #service .service_images{
+       padding-top: 5px;
+       height: 230px;
+    }
+    #service .service_images i{
+        margin-left: 10px;
+        font-size: 30px;
+    }
+    #service .service_images h3{
+        padding-top: 8px;
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    #service .service_images p{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        font-size: 14px;
+    }
+    #service .service_images:hover{
+        box-shadow: 1px 1px 3px 3px #fff;
+        border: 2px solid rgba(242, 242, 242, .51);
+    }
+    #service .service_images:hover i{
+        color: rgba(1, 1, 1, 1);
+    }
+    #skill .skill_text p{
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 18px;
+    }
+    #skill .skill_content{
+        height: 300px;
+        margin-top: 20px;        
+    }
+    #SkillBox{
+        margin-top: 20px;
+        width: 100%;
+    }
+    #skill .skill_content p{
+        padding-top: 10px;
+        margin-right: 25px;
+        font-size: 14px;
+    }
+    #skill .counter_bg{
+        height: 200px;
+    }
+    #skill .my_skill #SkillBox h1{
+        padding-top: 40px;
+    }
+    #skill .counter_bg .overlay .count i{
+        font-size: 45px;
+        padding-bottom: 0px;
+    }
+    #skill .counter_bg .overlay .count h4{
+        font-size: 20px;
+        padding-top: 0px;
+    }
+    #skill .counter_bg .overlay .count h3{
+        font-size: 13px;
+    }
+    #portfolio p{
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 18px;
+    }
+    #portfolio .buttons{
+        margin: 20px 0px;
+    }
+    #portfolio .buttons button{
+        font-size: 16px;
+    }
+    #portfolio .filter_overlay .overlay h3{
+        padding-top: 105px;
+        font-size: 12px;
+    }
+    #portfolio .filter_overlay .overlay i{
+        font-size: 20px;
+    }
+    #contact .form_text, #contact .form_email, #contact .form_tel, #contact .form_sub{
+        width: 345px;
+        font-size: 18px;
+    }
+    #contact .form_msg{
+        width: 720px;
+        font-size: 18px;
+    }
+    #contact .submit-button{
+        width: 90px;
+        height: 42px;
+    }
+    #contact .submit-button h3 a{
+        font-size: 16px;
+    }
+    #contact .submit-button:hover{
+        border: 2px solid #0c651d;
+        background: #0c651d;
+    }
+    #contact .submit-button:hover a{
+        color: #fff;
+    }
+    #footer .contact_icon .icon i{
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            font-size: 16px;
+    }
+    #footer .contact_icon{
+        height: 105px;
+    }
+    #footer .contact_icon .icon{
+        margin-top: 8px;
+    }
+    #footer .contact_icon .icon i:hover{
+        color: #898989;
+        border: 1px solid #898989;
+    }
+    .top_to{
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+        line-height: 35px;
+    }
+    .top_to:hover {
+        background: #0c651d;
+        border: 1px solid #0c651d;
+        color: #fff;
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    h2{
+        margin-top: 0px;
+    }
+    .navbar-toggler-icon{
+        background: none;
+        border: none;
+    }
+    .navbar-light .navbar-toggler{
+        border-color: none;
+    }
+    #home .navigation .menu .icon_class{
+        color: white;
+    }
+    .banner .carousel-inner .third_bg .overlay h2,  .banner .carousel-inner .first_bg .overlay h2,  .banner .carousel-inner .seceond_bg .overlay h2, .banner .carousel-inner .third_bg .overlay h2 span.one, .banner .carousel-inner .first_bg .overlay h2 span.one, .banner .carousel-inner .seceond_bg .overlay h2 span.one, .banner .carousel-inner .third_bg .overlay h2 span.two, .banner .carousel-inner .first_bg .overlay h2 span.two, .banner .carousel-inner .seceond_bg .overlay h2 span.two{
+        font-size: 40px;
+    }
+    .banner .carousel-inner .third_bg .overlay p, .banner .carousel-inner .first_bg .overlay p, .banner .carousel-inner .seceond_bg .overlay p, .banner .carousel-inner .third_bg .overlay p span.one, .banner .carousel-inner .first_bg .overlay p span.one, .banner .carousel-inner .seceond_bg .overlay p span.one{
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    .banner .carousel-inner .third_bg .overlay h3 a, .banner .carousel-inner .first_bg .overlay h3 a, .banner .carousel-inner .seceond_bg .overlay h3 a{
+        margin-top: 60px;
+        font-size: 14px;
+        width: 120px;
+        height: 45px;
+        line-height: 40px;
+    }
+    .banner .carousel-inner .seceond_bg .overlay h3 a:hover, .banner .carousel-inner .third_bg .overlay h3 a:hover, .banner .carousel-inner .first_bg .overlay h3 a:hover{
+        border: 2px solid #0c651d;
+        background: #0c651d;
+        color: #ffffff;
+}
+    .banner .carousel-indicators li{
+        margin-bottom: 30px;
+    }
+    .carousel-control-next, .carousel-control-prev{
+        font-size: 25px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+    .banner .carousel-control-prev:hover, .banner .carousel-control-next:hover{
+        color: #e8e8e8;
+        border: 1px solid #e8e8e8;
+    }
+    #home .menu .navbar .navbar-nav{
+        background: rgba(1, 1, 1, .9);
+        margin-top: 5px;
+    }
+    #home .menu .navbar .navbar-nav .nav-item{
+        border-bottom: 1px solid #6f6f6f;
+        padding-top: 10px;
+    }
+    #home .menu .navbar .navbar-nav .nav-item:last-child{
+        border-bottom: none;
+    }
+    #home .menu .navbar .navbar-nav .nav-item .nav-link{
+        margin-left: 15px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    #home .menu .navbar .navbar-nav .nav-item .nav-link:hover{
+        color: #fff;
+    }
+}
+@media(min-width: 320px) and (max-width: 575px){}
